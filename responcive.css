@@ -60,7 +60,7 @@
         font-weight: 500;
         margin-bottom: 7px;
     }
-    .services .serv-content .card{
+    .projects .pro-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -140,7 +140,7 @@
         padding: 10px 33px;
     }
     
-    .services .serv-content .card{
+    .projects .pro-content .card{
         width: 100%;
     }
 }

@@ -144,11 +144,11 @@ html{
 section{
     padding: 150px 0;
 }
-.about, .services, .skills, .team, .contact, footer{
+.about, .projects, .skills, .team, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.projects .pro-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -231,57 +231,72 @@ section .title::after{
     background: #fff;
 }
 
-/* Servies section styling */
+/* projects section styling */
 
-.services, .team{
+.projects, .team{
     background: #111;
     color: #fff;
+    height: 100vh;
 }
-.services .title::before,
+.projects .title::before,
 .team .title::before{
     background: #fff;
 }
-.services .title::after,
+.projects .title::after,
 .team .title::after{
     background: #111;
-    content: "what i provide";
+    content: "my creativity";
 }
-.services .serv-content .card{
+.projects .pro-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
     padding: 20px 25px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
 }
-.services .serv-content .card .box{
+.projects .pro-content .card .box{
     transition: all 0.1s ease;
 }
-.services .serv-content .card:hover{
+.projects .pro-content .card:hover{
     background: crimson;
 
 }
-.services .serv-content .card:hover .box{
+.projects .pro-content .card:hover .box{
     transform: scale(1.08);
 }
-.services .serv-content .card i{
+.projects .pro-content .card i{
     font-size: 55px;
     color: crimson;
     transition: color 0.1s ease;
 }
-.services .serv-content .card:hover i{
+.projects .pro-content .card:hover i{
     font-size: 55px;
     color: #fff;
 }
-.services .serv-content .card .text{
+.projects .pro-content .card .text{
     font-size: 35px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+.projects  a{  
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    transition: all 0.6s ease;
+}
 
 /* skills section styling */
-
+.skills{
+    height: 100vh;
+}
 .skills .title::after{
     content: 'what i know';
 }
